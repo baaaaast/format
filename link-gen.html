@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="robots" content="noindex, nofollow">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ad Preview Tool</title>
+	<link rel="icon" type="image/png" href="images/favicon.png">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<style type="text/css">
+		html {
+		    min-height: 790px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="form" id="form">
+			<div class="input-container">
+				<div class="field">
+					<label>Enter your AdBuilder preview links</label>
+					<div class="tooltip">
+						<img src="images/icons/icon-tooltip.svg">
+						<span class="tooltiptext">Interstitials, MPUs and banners are supported</span>
+					</div>
+					<textarea id="input" placeholder="https://..." autofocus></textarea>
+				</div>
+				<div class="btns-container">
+					<button class="btn-yellow" id="btn-gen" onclick="generate()">Generate Links</button>
+				</div>
+			</div>
+			<div id="output-container">
+				<div class="field">
+					<label>Generated links</label>
+					<textarea id="output" readonly></textarea>
+				</div>
+				<div class="btns-container">
+					<button class="btn-green" id="btn-copy" onclick="copy()">Copy</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script type="text/javascript" src="javascripts/link-gen.js"></script>
+
+</html>

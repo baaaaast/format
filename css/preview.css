@@ -1,0 +1,166 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+* {
+    box-sizing: border-box;
+    position: relative;
+}
+
+html,
+body {
+    font-family: 'Lato', sans-serif;
+    background: #CCCCCC;
+    height: 100%;
+    margin: 0;
+}
+
+.screen-container {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.format-container {
+    height: 100%;
+    width: 100%;
+}
+
+@media only screen and (min-width: 770px) {
+    html {
+        min-height: 790px;
+    }
+
+    .device {
+        position: relative;
+        height: 728px;
+        width: 350px;
+        padding: 70px 10px 80px;
+        border: 5px solid #2f2f2f;
+        border-radius: 60px;
+        background-color: #171717;
+        box-shadow: 0 0 50px 10px rgba(0, 0, 0, 0.4);
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .device:before,
+    .device:after {
+        content: '';
+        position: absolute;
+        z-index: 2;
+    }
+
+    .device:before {
+        width: 20%;
+        height: 8px;
+        top: 32px;
+        left: 40%;
+        border-radius: 10px;
+        background-color: #2f2f2f;
+    }
+
+    .device:after {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: solid 5px #2f2f2f;
+        left: calc(50% - 20px);
+        bottom: 15px;
+    }
+
+    .device section {
+        height: calc(100% - 50px);
+        width: 100%;
+        overflow: hidden;
+        background-color: #644749;
+    }
+
+    .device header,
+    .device footer {
+        height: 40px;
+        background-color: #8ba892;
+    }
+
+    .device-bg {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 0;
+    }
+
+    #S4M-logo {
+        position: fixed;
+        width: 180px;
+        bottom: 40px;
+        left: 40px;
+    }
+
+    .qrcode-container {
+        position: fixed;
+        bottom: 40px;
+        right: 40px;
+        background-color: #171717;
+        margin-top: 50px;
+        display: inline-block;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .qrcode-container p {
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        margin: 5px;
+    }
+
+    .qrcode-img {
+        height: 200px;
+        width: 200px;
+        background-color: white;
+        padding: 10px;
+        border-radius: 6px;
+    }
+
+    .qrcode-label {
+        color: white;
+        text-align: center;
+    }
+
+    .qrcode-label h1 {
+        font-weight: 500;
+        margin: 10px 0 0;
+        font-size: 2rem;
+    }
+
+    .qrcode-label h2 {
+        font-weight: 200;
+        margin: 0 0 10px;
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .content-desktop {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    html, 
+    body {
+        overflow: hidden;
+    }
+
+    .device {
+        width: 100%;
+        height: 100%;
+    }
+
+    .device-bg {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 0;
+    }
+}

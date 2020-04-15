@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="robots" content="noindex, nofollow">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ad Preview Tool</title>
+	<link rel="icon" type="image/png" href="images/favicon.png">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<style type="text/css">
+		html {
+			    min-height: 300px;
+			}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<form class="form" action="preview.html" method="GET" enctype="text/plain">
+			<div class="field">
+				<label>Enter your AdBuilder preview link</label>
+				<div class="tooltip"><img src="images/icons/icon-tooltip.svg">
+					<span class="tooltiptext">Interstitials, MPUs and banners are supported</span>
+				</div>
+				<input placeholder="https://..." type="url" name="previewLink" id="previewLink" required autofocus>
+			</div>
+			<div class="btns-container">
+				<button type="submit" class="btn-blue">Generate Preview</button>
+			</div>
+		</form>
+	</div>
+</body>
+
+<script>
+	// Do not remove. Prevents Chrome for firing CSS transition on page load.
+</script>
+
+</html>

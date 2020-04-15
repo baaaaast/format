@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>S4M Preview</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/preview.css">
+</head>
+
+<body>
+    <div class="device">
+        <div class="screen-container" id="screen-container">
+            <iframe class="device-bg" scrolling="no" src="device-bg.html" height="100%" width="100%" frameborder="0"></iframe>
+            <div id="format-container" class="format-container"></div>
+        </div>
+    </div>
+    <div class="content-desktop">
+        <img id="S4M-logo" src="images/S4M-logo-white.png">
+        <div class="qrcode-container">
+            <div id="qrcode" class="qrcode-img"></div>
+            <div class="qrcode-label">
+                <h1>SCAN ME</h1>
+                <h2>TO PREVIEW IN MOBILE</h2>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="javascripts/preview.js"></script>
+<script src="javascripts/qrcode-lib.js"></script>
+<script src="javascripts/qrcode-gen.js"></script>
+
+</html>
